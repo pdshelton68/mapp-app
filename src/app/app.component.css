@@ -1,0 +1,50 @@
+:host{
+    display: grid;
+    width: 100vw;
+    height: 100%;
+}
+
+.control-bar{
+    height: 60px;
+}
+
+.map-control{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.control-container{
+    position: absolute;
+    z-index: 9999; 
+    left: 80%;
+    top: 45px;
+    width: 300px;
+    height: 300px;
+    border-color: white !important;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+
+}
+
+.initializing{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.session-selector{
+    z-index: 9999; 
+    position: absolute;
+    left: 80%;
+    top: 45px;
+    width: 145px;
+    height: 45px;
+    border-color: white !important;
+}
