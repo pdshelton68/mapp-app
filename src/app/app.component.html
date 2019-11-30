@@ -14,15 +14,16 @@
 <div class="control-container">
     
     <div>Choose a Session:</div>
+    <div>
     <select [(ngModel)]="selectedSession">
         <option *ngFor="let session of sessions" [ngValue]="session">{{session.Title}}</option>
     </select>
-
+    </div>
     <div>Total Distance:</div>
-    <div>{{totalDistance}}</div>
+    <div>{{totalDistance | number:'1.1-2'}} miles</div>
 
     <div>Average Speed:</div>
-    <div>{{averageSpeed | number:'1.1-2'}}</div>
+    <div>{{averageSpeed | number:'1.1-1'}} mph</div>
 </div>
 
 <div class="map-control"

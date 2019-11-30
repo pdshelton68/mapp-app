@@ -18,17 +18,23 @@
 .control-container{
     position: absolute;
     z-index: 9999; 
-    left: 80%;
+    left: 75%;
     top: 45px;
+    right: 40px;
     width: 300px;
-    height: 300px;
+    height: 90px;
     border-color: white !important;
     background-color: white;
-
+    
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
 
+}
+
+.control-container div{
+
+    margin-left: 5px;
 }
 
 .initializing{
